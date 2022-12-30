@@ -56,6 +56,10 @@ jobs:
         shell: bash
         env:
           KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
+          
+      - name: Echo cosign.key file
+        run: 'cat cosign.key'
+        shell: bash
       
       - name: Sign the published Docker image
         env:
