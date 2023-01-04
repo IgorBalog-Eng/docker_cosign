@@ -1,13 +1,15 @@
 name: Docker CI
 
 on:
-  push:
-    branches: [ master ]
   workflow_dispatch:
+    inputs:
+      versionName:
+        description: 'Name of version  (ie 5.5.0)'
+        required: true
     
 env:
   REGISTRY: hub.docker.com
-  IMAGE_NAME: signedcontainer
+  IMAGE_NAME: signedcontainer:v${{ github.event.inputs.versionName }}
 
 jobs:
   build:
@@ -43,7 +45,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
-          images: igorbalogeng/signedcontainer
+          images: igorbalogeng/${{ env.IMAGE_NAME }}
 
       - name: Build and push Docker image
         id: build-and-push
