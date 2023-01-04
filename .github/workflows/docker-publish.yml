@@ -54,7 +54,7 @@ jobs:
           context: .
           push: true
           tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          labels: v${{ github.event.inputs.versionName }}
       
       - name: cosign-installer
         uses: sigstore/cosign-installer@v2.0.0
