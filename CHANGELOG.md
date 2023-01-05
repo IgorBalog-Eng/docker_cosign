@@ -6,5 +6,6 @@ All notable changes to this project will be documented in this file.
 ### Added
 
  - added some exotic functionality that will be reflected in product
+ - added new endpoint
 
  
