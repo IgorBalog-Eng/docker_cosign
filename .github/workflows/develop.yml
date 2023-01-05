@@ -1,4 +1,4 @@
-name: Develop build
+name: Develop build after feature/hotfix merged
 
 on:
   push:
