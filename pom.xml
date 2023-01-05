@@ -16,6 +16,13 @@
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+	
+	<scm>
+      <connection>scm:git:git://github.com/IgorBalog-Eng/docker_cosign.git</connection>
+      <developerConnection>scm:git:git@github.com:IgorBalog-Eng/docker_cosign.git</developerConnection>
+      <url>http://github.com/IgorBalog-Eng/docker_cosign.git</url>
+   </scm>
+   
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
