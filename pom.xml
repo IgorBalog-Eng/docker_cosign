@@ -17,9 +17,10 @@
 	</properties>
 	
 	<scm>
-      <connection>scm:git:git://github.com/IgorBalog-Eng/docker_cosign.git</connection>
+<!--       <connection>scm:git:git://github.com/IgorBalog-Eng/docker_cosign.git</connection> -->
+      <connection>scm:git:https://github.com/IgorBalog-Eng/docker_cosign.git</connection>
       <developerConnection>scm:git:git@github.com:IgorBalog-Eng/docker_cosign.git</developerConnection>
-      <url>http://github.com/IgorBalog-Eng/docker_cosign.git</url>
+      <url>https://github.com/IgorBalog-Eng/docker_cosign.git</url>
      <tag>HEAD</tag>
   </scm>
    
