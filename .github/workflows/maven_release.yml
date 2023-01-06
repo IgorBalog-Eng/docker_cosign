@@ -8,9 +8,8 @@ on:
 
 jobs:
   master_release:
-
+    if: "!contains(github.event.head_commit.message, '[maven-release-plugin]')"
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 11
