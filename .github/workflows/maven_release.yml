@@ -26,6 +26,7 @@ jobs:
 
     - name: Release with Maven
       env:
+        GITHUB_USERNAME: ${{ github.actor }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: mvn -B release:prepare --file pom.xml
 
