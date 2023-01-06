@@ -24,10 +24,10 @@ jobs:
         git config user.name "GitHub Actions"
         git config user.email noreply@github.com
 
-    - name: webfactory/ssh-agent
+    - name: ssh-agent
       uses: webfactory/ssh-agent@v0.7.0
       with:
-        ssh-private-key: ${{ SSH_KEY }}
+        ssh-private-key: ${{ secrets.SSH_KEY }}
     
     - name: Release with Maven
       env:
