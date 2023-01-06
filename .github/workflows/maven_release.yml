@@ -26,7 +26,7 @@ jobs:
 
     - name: Release with Maven
       env:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: mvn -B release:prepare --file pom.xml
 
     - name: Create A Pull Request
