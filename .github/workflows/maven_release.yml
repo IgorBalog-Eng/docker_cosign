@@ -39,8 +39,12 @@ jobs:
       env:
         GITHUB_USERNAME: ${{ github.actor }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: mvn -B -Dtag=${{ github.event.inputs.tagVersion }} release:prepare -DreleaseVersion=${{ github.event.inputs.releaseVersion }} -DdevelopmentVersion=${{ github.event.inputs.developmentVersion }} --file pom.xml
-
+      run: |
+        mvn -B -Dtag=${{ github.event.inputs.tagVersion }} release:prepare \
+        -DreleaseVersion=${{ github.event.inputs.releaseVersion }} \
+        -DdevelopmentVersion=${{ github.event.inputs.developmentVersion }} --file pom.xml \
+        && mvn release:perform -B --file pom.xml
+          
     - name: Create A Pull Request
       uses: thomaseizinger/create-pull-request@1.3.0
       with:

@@ -9,21 +9,29 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>rest-service-complete</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>0.1.1-SNAPSHOT</version>
 	<name>rest-service-complete</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
-	
+
 	<scm>
-<!--       <connection>scm:git:git://github.com/IgorBalog-Eng/docker_cosign.git</connection> -->
-      <connection>scm:git:https://github.com/IgorBalog-Eng/docker_cosign.git</connection>
-      <developerConnection>scm:git:git@github.com:IgorBalog-Eng/docker_cosign.git</developerConnection>
-      <url>https://github.com/IgorBalog-Eng/docker_cosign.git</url>
-     <tag>HEAD</tag>
-  </scm>
-   
+		<connection>scm:git:git://github.com/IgorBalog-Eng/docker_cosign.git</connection>
+		<!-- <connection>scm:git:https://github.com/IgorBalog-Eng/docker_cosign.git</connection> -->
+		<developerConnection>scm:git:git@github.com:IgorBalog-Eng/docker_cosign.git</developerConnection>
+		<url>https://github.com/IgorBalog-Eng/docker_cosign.git</url>
+		<tag>HEAD</tag>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/IgorBalog-Eng/docker_cosign</url>
+		</repository>
+	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
