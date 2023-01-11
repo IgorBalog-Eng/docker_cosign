@@ -1,5 +1,9 @@
 package com.example.restservice;
-
+/**
+ * Greetings class
+ * @author igor.balog
+ *
+ */
 public class Greeting {
 
 	private final long id;
