@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>rest-service-complete</artifactId>
-	<version>0.1.2-SNAPSHOT</version>
+	<version>1.0.16-SNAPSHOT</version>
 	<name>rest-service-complete</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>

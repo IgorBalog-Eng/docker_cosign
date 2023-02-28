@@ -1,6 +1,6 @@
 # GitHub Workflow example project
 
-![diagram](doc/github actions workdlow.drawio.png?raw=true "GitHub Workflow diagram")
+![diagram](doc/github_actions_workflow.drawio.png?raw=true "GitHub Workflow diagram")
 
 .github\workflows\ folder, check for specific GHA file:
 
